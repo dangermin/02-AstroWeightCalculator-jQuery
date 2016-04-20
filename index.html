@@ -5,6 +5,7 @@
 <head>
 <link type="text/css" rel="stylesheet" href="index.css">
 <script type="text/javascript" src="index.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <title>Astro Weight Calculator</title>
 
 </head>
@@ -40,9 +41,13 @@
 	<br>
 	<!-- Calculate Button -->
 	<div>
-		<input id="submit" type="submit" value="Calculate Weight" size="20" onclick="theAnswer();">
+		<input id="submit" type="submit" value="Calculate Weight" size="20">
 	</div>
 	<!-- Show Calculated Weight -->
 	<p id="answerField"></p>
+
+	<script>
+		$("#submit").click(theAnswer);
+	</script>
 
 </body>

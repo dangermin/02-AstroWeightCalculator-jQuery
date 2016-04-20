@@ -2,13 +2,13 @@
 
 
 function theAnswer(){
-	var x = document.getElementById("weight").value;
-	var y = document.getElementById("planets").value;
+	var x = $("#weight").val();
+	var y = $("#planets").val();
 	var z = x * y;
 	if (!isNaN(z) ){
-		document.getElementById("answerField").innerHTML="Your weight is " + Math.round(z) + " space pounds";
+		$("#answerField").html("Your weight is " + Math.round(z) + " space pounds");
 		}
 		else {
-	  	document.getElementById("answerField").innerHTML="Not a valid input";
+	  	$("#answerField").html("Not a valid input. Please enter a number.");
 		}
 	}
